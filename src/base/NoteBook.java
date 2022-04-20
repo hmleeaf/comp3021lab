@@ -74,6 +74,10 @@ public class NoteBook implements java.io.Serializable {
 		}
 		return output;
 	}
+
+	public void addFolder(String folderName) {
+		folders.add(new Folder(folderName));
+	}
 	
 	/**
 	* method to save the NoteBook instance to file
